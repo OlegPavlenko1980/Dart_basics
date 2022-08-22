@@ -7,8 +7,8 @@ class Onetask {
   }
 
   void nok(int a, int b) {
-    // ignore: avoid_print
     var res = (a * b).abs() / a.gcd(b);
+    // ignore: avoid_print
     print('NOK $res');
   }
 

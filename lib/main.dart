@@ -27,11 +27,13 @@ void main() {
   fourtask.findInString();
 
   Fivetask fivetask = Fivetask();
-  fivetask.inNoPov();
+  Set<String> set1 = {'one', 'dog'};
+  fivetask.inNoPov(set1);
 
-  Sixtask sixtask = Sixtask();
+  Point point = Point(33, 33, 33);
+  var pointResult = point.distanceTo(2, 2, 2);
   // ignore: avoid_print
-  print(sixtask.distanceTo(2, 2, 2));
+  print("POINT $pointResult");
 
   Seventask seventask = Seventask();
   // ignore: avoid_print

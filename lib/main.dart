@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'task/one_task.dart';
 import 'task/two_task.dart';
 import 'task/three_task.dart';
@@ -27,8 +29,13 @@ void main() {
   fourtask.findInString();
 
   Fivetask fivetask = Fivetask();
-  Set<String> set1 = {'one', 'dog'};
-  fivetask.inNoPov(set1);
+
+  // ignore: avoid_print
+  print(fivetask.findNumsIn('1 2 3 4'));
+  // ignore: avoid_print
+  print(fivetask.findStringsIn(['one', 'two', 'zero', 'zero']));
+  // ignore: avoid_print
+  print(fivetask.findNumNamesIn(['one', 'two', 'zero', 'zero']));
 
   Point point = Point(33, 33, 33);
   var pointResult = point.distanceTo(2, 2, 2);
